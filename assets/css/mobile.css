@@ -1,0 +1,567 @@
+/* Imported Stylesheets */
+
+@import url("reset.css");
+@import url("typography.css");
+
+body {
+	font-family: Georgia, Times, 'Times New Roman';
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0) url(../media/background.png) top center;
+	}
+
+#header {
+	position: relative;
+	width: 970px;
+	height: 600px;
+	margin: 0 auto;
+	}
+
+	h1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: -9999px;
+		z-index: 100;
+		}
+
+		h1 a {
+			display: block;
+			width: 400px;
+			height: 150px;
+			background: url(../media/logo.png);
+			}
+
+			h1 a:hover {}
+
+	#navigation {
+		position: absolute;
+		bottom: 75px;
+		left: 0;
+		width: 970px;
+		height: 75px;
+		font-size: 22px;
+		font-weight: 700;
+		font-family: Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		}
+
+		#navigation li {
+			float: left;
+			display: inline;
+			}
+
+			#navigation li a {
+				display: block;
+				width: 176px;
+				height: 58px;
+				padding: 17px 0 0 18px;
+				color: #fff;
+				text-decoration: none;
+				text-shadow: rgba(0, 0, 0, 1) 0 0 5px;
+				background: url(../media/tab-background.png) 0 0 no-repeat;
+				}
+
+			#navigation li a:hover {
+				text-shadow: rgba(0, 0, 0, 1) 0 0 5px;
+				background: url(../media/tab-background.png) 0 -75px no-repeat;
+				}
+
+			.about-us #about-us a,
+			.services #services a,
+			.volunteer #volunteer a,
+			.donate #donate a,
+			.contact #contact a,
+			.about-us #about-us a:hover,
+			.services #services a:hover,
+			.volunteer #volunteer a:hover,
+			.donate #donate a:hover,
+			.contact #contact a:hover {
+				text-shadow: rgba(255, 255, 255, .5) 0 0 10px;
+				background: url(../media/tab-background.png) bottom left;
+				}
+
+				#navigation li a em {
+					display: block;
+					font-size: 12px;
+					font-weight: 100;
+					font-family: Georgia, Times, 'Times New Roman', serif;
+					text-transform: none;
+					}
+
+	.promotion {
+		position: absolute;
+		top: 0;
+		right: 0;
+		text-indent: -9999px;
+		z-index: 300;
+		}
+
+		.promotion a {
+			display: block;
+			width: 90px;
+			height: 105px;
+			background: url(../media/promotion/sponsor-a-senior.png) no-repeat;
+			}
+
+	#slides {
+		position: relative;
+		height: 450px;
+		overflow: hidden;
+		}
+
+		#nav {
+			position: absolute;
+			bottom: 200px;
+			right: 0;
+			z-index: 100;
+			}
+
+			#nav a {
+				float: left;
+				display: inline;
+				width: 22px;
+				height: 19px;
+				margin: 0 0 0 20px;
+				padding: 3px 0 0 0;
+				font-size: 14px;
+				font-family: Helvetica, Arial, sans-serif;
+				color: rgb(51, 51, 51);
+				background: rgb(26, 26, 26);
+				text-decoration: none;
+				text-align: center;
+				}
+
+				#nav a:hover,
+				#nav a.activeSlide {
+					color: rgb(255, 255, 255);
+					font-weight: 700;
+					}
+
+		.slide {
+			position: relative;
+			width: 970px;
+			height: 450px;
+			}
+
+			.slide img {}
+
+			.slide .message {
+				position: absolute;
+				top: 220px;
+				left: 90px;
+				width: 265px;
+				z-index: 100;
+				}
+
+			.slide h2 {
+				font-size: 36px;
+				font-weight: 100;
+				color: #fff;
+				padding: 0 0 7px 0;
+				}
+
+			.slide p {
+				font-size: 16px;
+				font-family: Helvetica, Arial, sans-serif;
+				color: rgb(153, 153, 153);
+				}
+
+	#news {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 970px;
+		height: 45px;
+		padding: 30px 0 0 0;
+		background: url(../media/news-background.png);
+		}
+
+		#news h3 {
+			position: relative;
+			top: -3px;
+			float: left;
+			display: inline;
+			margin: 0 15px 0 35px;
+			font-size: 18px;
+			font-style: italic;
+			font-weight: 100;
+			color: rgb(131, 107, 140);
+			}
+
+		#news p {
+			float: left;
+			display: inline;
+			font-size: 16px;
+			font-family: Helvetica, Arial, sans-serif;
+			}
+
+			#news p a {
+				color: #fff;
+				text-decoration: none;
+				}
+
+				#news p a:hover {
+					text-decoration: underline;
+					}
+
+				#news p a #read-more {
+					position: relative;
+					top: -1px;
+					font-size: 10px;
+					text-transform: uppercase;
+					text-decoration: none;
+					}
+
+#body {
+	clear: both;
+	width: 970px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(../media/texture.png) repeat-y;
+	}
+
+	.column {
+		position: relative;
+		float: left;
+		display: inline;
+		}
+
+	#left {
+		position: relative;
+		float: left;
+		display: inline;
+		width: 500px;
+		padding: 50px;
+		}
+
+		#stylesheet-switcher {
+			position: absolute;
+			top: 50px;
+			right: 50px;
+			}
+
+			.color {
+				float: left;
+				display: inline;
+				margin: 0 10px 0 0;
+				text-indent: -9999px;
+				}
+
+				.color a {
+					display: block;
+					width: 90px;
+					height: 30px;
+					background: url(../media/stylesheet-switcher) 0 0 no-repeat;
+					}
+
+			#text {
+				float: left;
+				display: inline;
+				width: 61px;
+				height: 30px;
+				background: url(../media/stylesheet-switcher) top right no-repeat;
+				}
+
+				#text li {
+					float: left;
+					display: inline;
+					text-indent: -9999px;
+					}
+
+					#text li#decrease a {
+						display: block;
+						width: 30px;
+						height: 30px;
+						background: url(../media/stylesheet-switcher) -100px 0 no-repeat;
+						}
+
+						#text li#decrease a:hover {
+							background-position: -100px -30px;
+							}
+
+					#text li#increase a {
+						display: block;
+						width: 30px;
+						height: 30px;
+						background: url(../media/stylesheet-switcher) -131px 0 no-repeat;
+						}
+
+
+						#text li#increase a:hover {
+							background-position: -131px -30px;
+							}
+
+		#left h2 {
+			padding: 0 0 16px 0;
+			font-size: 24px;
+			font-family: Helvetica, Arial, sans-serif;
+			}
+
+		#left h3 {
+			padding: 25px 0 7px 0;
+			font-size: 18px;
+			font-family: Helvetica, Arial, sans-serif;
+			}
+
+		#left p {
+			padding: 0 0 12px 0;
+			font-size: 16px;
+			line-height: 25px;
+			}
+
+			#left p a {
+				color: rgb(131, 107, 140);
+				}
+
+		.photo {
+			border: 5px solid rgb(255, 255, 255);
+			-webkit-box-shadow: rgba(0, 0, 0, .75) 0 0 20px;
+			-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .75);
+			box-shadow: 0 0 20px rgba(0, 0, 0, .75);
+			}
+
+			.photo.left {
+				position: relative;
+				left: -25px;
+				float: left;
+				margin: 0 -5px 0 0;
+				}
+
+			.photo.right {
+				position: relative;
+				right: -75px;
+				float: right;
+				margin: 0 0 0 -55px;
+				}
+
+		#stylesheet-switcher + p {
+			padding: 25px 0 12px 0;
+			}
+
+			#left p a {
+				color: rgb(131, 107, 140);
+				}
+
+		#left ol {
+			margin: 0 0 12px 0;
+			padding: 0 0 0 25px;
+			font-size: 16px;
+			line-height: 25px;
+			text-indent: 0;
+			list-style-type: decimal;
+			}
+
+			#left ol li a {
+				color: rgb(131, 107, 140);
+				}
+
+		#left ul {
+			margin: 0 0 12px 0;
+			padding: 0 0 0 15px;
+			font-size: 16px;
+			line-height: 25px;
+			border-left: 3px solid rgb(131, 107, 140);
+			}
+
+			#stylesheet-switcher ul {
+				margin: 0;
+				padding: 0;
+				border: none;
+				}
+
+			#left ul li {
+				padding: 0;
+				}
+
+				#left ul li:last-child {
+					padding: 0 0 0 0;
+					}
+
+		blockquote {
+			margin: 25px 0 15px 0;
+			padding: 35px 20px 35px 20px;
+			font-size: 24px;
+			line-height: 35px;
+			text-align: center;
+			text-shadow: rgba(255, 255, 255, .75) 0 0 10px;
+			border-top: 1px solid rgb(50, 50, 50);
+			border-bottom: 1px solid rgb(50, 50, 50);
+			}
+
+			blockquote a {
+				color: rgb(131, 107, 140);
+				text-shadow: rgba(131, 107, 140, .75) 0 0 10px;
+				}
+
+		form {}
+
+			.contact #left ol {
+				margin: 0;
+				padding: 25px 0 0 0;
+				list-style-type: none;
+				}
+
+				form li {
+					margin: 0 0 25px 0;
+					}
+
+					form label {
+						display: block;
+						margin: 0 0 5px 0;
+						font-size: 18px;
+						font-family: Helvetica, Arial, sans-serif;
+						}
+
+					form li input:focus,
+					textarea:focus {
+						background: rgb(205, 240, 255);
+						}
+
+					form li input {
+						display: block;
+						width: 400px;
+						padding: 3px;
+						font-size: 16px;
+						font-family: Helvetica, Arial, sans-serif;
+						}
+
+					form textarea {
+						width: 402px;
+						max-width: 402px;
+						min-height: 200px;
+						padding: 3px;
+						font-size: 16px;
+						font-family: Helvetica, Arial, sans-serif;
+						}
+
+					form button {
+						width: 175px;
+						height: 40px;
+						margin: 0;
+						padding: 0;
+						border: 0;
+						cursor: pointer;
+						background: transparent;
+						}
+
+	#right {
+		position: relative;
+		float: left;
+		display: inline;
+		width: 250px;
+		padding: 50px 120px 0 0;
+		}
+
+		#subnavigation {
+			font-size: 16px;
+			line-height: 25px;
+			}
+
+			#subnavigation li {
+				padding: 0 0 7px 0;
+				}
+
+				#subnavigation li a {
+					color: rgb(255, 255, 255);
+					text-decoration: none;
+					font-family: Helvetica, Arial, sans-serif;
+					}
+
+				#subnavigation li a:hover {
+					text-decoration: underline;
+					}
+
+		#right h3 {
+			color: rgb(189, 204, 212);
+			font-size: 18px;
+			font-family: Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			text-align: center;
+			}
+
+			#right h3 em {
+				font-size: 20px;
+				font-weight: 100;
+				font-family: Georgia, Times, 'Times New Roman', serif;
+				text-transform: none;
+				}
+
+		#upcoming-events {}
+
+			.event {
+				position: relative;
+				width: 270px;
+				min-height: 75px;
+				font-family: Helvetica, Arial, sans-serif;
+				background: url(../media/events-background.png) repeat-y;
+				}
+
+				.event:hover {
+					background: url(../media/events-background-hover.png) repeat-y;
+					}
+
+			.event.top {
+				border-top: 1px solid rgb(153, 153, 153);
+				border-top: 1px solid rgba(153, 153, 153, .35);
+				}
+
+			.event.middle {
+				border-top: 1px solid rgb(153, 153, 153);
+				border-top: 1px solid rgba(153, 153, 153, .15);
+				border-bottom: 1px solid rgb(153, 153, 153);
+				border-bottom: 1px solid rgba(153, 153, 153, .15);
+				}
+
+			.event.bottom {
+				border-bottom: 1px solid rgb(153, 153, 153);
+				border-bottom: 1px solid rgba(153, 153, 153, .35);
+				}
+
+				.event h4 {}
+
+					.event h4 a {}
+
+				.event ul {}
+
+					.event ul li {}
+
+						.event .date {}
+
+							.month {
+								display: block;
+								font-size: 12px;
+								}
+
+							.day {
+								display: block;
+								font-size: 32px;
+								font-family: Georgia, Times, 'Times New Roman', serif;
+								}
+
+							.year {
+								display: block;
+								color: rgb(128, 128, 128);
+								font-size: 12px;
+								}
+
+						.event .time {}
+
+			#upcoming-events p {
+				float: right;
+				margin: 10px 0 0 0;
+				}
+
+				#upcoming-events p a {
+					color: rgb(255, 255, 255);
+					font-size: 12px;
+					font-family: Helvetica, Arial, sans-serif;
+					text-decoration: none;
+					}
+
+#footer {
+	clear: both;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	background: rgb(133, 11, 23);
+	}
